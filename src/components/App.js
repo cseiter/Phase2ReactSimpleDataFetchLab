@@ -14,7 +14,7 @@ function App() {
     },[]);
 
     if (!isLoaded) return <p>Loading...</p>;
-    return <div id="getRandDog"><img src="getRandDog" /></div>
+    return <img src={getRandDog} alt="A Random Dog" />
 }
 
 export default App;
