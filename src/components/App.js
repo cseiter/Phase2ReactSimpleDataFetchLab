@@ -2,8 +2,7 @@
 import React,{useState,useEffect} from "react";
 
 function App() {
-    const [getRandDog, setRandDog] = useState([]);
-    const [isLoaded,setIsLoaded] = useState(false);
+    const [getRandDog, setRandDog] = useState(null);
 
     useEffect(() => {
         fetch("https://dog.ceo/api/breeds/image/random")
