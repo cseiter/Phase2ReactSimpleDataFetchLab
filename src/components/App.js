@@ -13,8 +13,8 @@ function App() {
         });
     },[]);
 
-    if (!isLoaded) return <p>Loading...</p>;
-    return <img src={getRandDog} alt="A Random Dog" />
+    if (!getRandDog) return <p>Loading...</p>;
+    return <img src={getRandDog} alt="A Random Dog" />;
 }
 
 export default App;
